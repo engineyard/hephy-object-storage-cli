@@ -20,6 +20,9 @@ GO_LDFLAGS = -ldflags "-s -X ${REPO_PATH}/version.BuildVersion=${VERSION}"
 
 VERSION ?= $(shell git rev-parse --short HEAD)
 
+glideup:
+	${DEV_ENV_CMD} glide up
+
 bootstrap:
 	${DEV_ENV_CMD} glide install
 

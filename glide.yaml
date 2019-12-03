@@ -1,9 +1,10 @@
 package: github.com/deis/object-storage-cli
 import:
 - package: github.com/codegangsta/cli
+  version: bc465becccd1d527002fda095fc3c19d9c115029
 - package: github.com/docker/distribution
-  repo: https://github.com/deisthree/distribution
-  version: 0afef00d5764404d70f86076f364551657d51de6
+  repo: https://github.com/jfuechsl/distribution
+  version: 17bfe45724daa3b4d14314aeba34700ed286b02f
   vcs: git
   subpackages:
   - registry/storage/driver

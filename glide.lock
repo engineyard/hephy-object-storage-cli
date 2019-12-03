@@ -1,10 +1,10 @@
-hash: fbc54749758c17e9582df3a7a0770c217cf79e477262dbcb5364f57de104dd34
-updated: 2016-06-13T17:50:47.912708246-06:00
+hash: c628abe6b255c82f71789ce454a5755dedb72c9bd38b3376263dcb1894351173
+updated: 2019-12-03T08:36:09.703619574Z
 imports:
 - name: github.com/arschles/assert
-  version: d21ecd4884be33397d1298c3738b2b4937c7f499
+  version: bb58b908265b5931732079df03f2818bf2167ba0
 - name: github.com/aws/aws-sdk-go
-  version: 49c3892b61af1d4996292a3025f36e4dfa25eaee
+  version: 3724cb09315309e00556944edfc2946859167973
   subpackages:
   - aws
   - aws/awserr
@@ -18,17 +18,33 @@ imports:
   - aws/ec2metadata
   - aws/request
   - aws/session
-  - private/endpoints
   - private/protocol
   - private/protocol/query
   - private/protocol/query/queryutil
   - private/protocol/rest
   - private/protocol/restxml
   - private/protocol/xml/xmlutil
-  - private/signer/v4
-  - private/waiter
   - service/cloudfront/sign
   - service/s3
+  - vendor/github.com/jmespath/go-jmespath
+  - aws/endpoints
+  - internal/sdkio
+  - internal/ini
+  - internal/shareddefaults
+  - internal/sdkrand
+  - internal/sdkuri
+  - aws/credentials/endpointcreds
+  - private/protocol/json/jsonutil
+  - internal/sdkmath
+  - aws/credentials/processcreds
+  - aws/credentials/stscreds
+  - aws/csm
+  - service/sts
+  - service/sts/stsiface
+  - aws/signer/v4
+  - internal/s3err
+  - private/protocol/eventstream
+  - private/protocol/eventstream/eventstreamapi
 - name: github.com/Azure/azure-sdk-for-go
   version: 95361a2573b1fa92a00c5fc2707a80308483c6f9
   subpackages:
@@ -36,8 +52,8 @@ imports:
 - name: github.com/codegangsta/cli
   version: bc465becccd1d527002fda095fc3c19d9c115029
 - name: github.com/docker/distribution
-  version: 0afef00d5764404d70f86076f364551657d51de6
-  repo: https://github.com/deisthree/distribution
+  version: 17bfe45724daa3b4d14314aeba34700ed286b02f
+  repo: https://github.com/jfuechsl/distribution
   vcs: git
   subpackages:
   - registry/storage/driver
@@ -51,8 +67,6 @@ imports:
   - registry/storage/driver/base
   - registry/client/transport
   - version
-- name: github.com/go-ini/ini
-  version: afbd495e5aaea13597b5e14fe514ddeaa4d76fc3
 - name: github.com/golang/protobuf
   version: 8d92cf5fc15a4382f8964b08e1f42a75c0591aa3
   subpackages:
@@ -64,7 +78,7 @@ imports:
 - name: github.com/jmespath/go-jmespath
   version: 0b12d6b521d83fc7f755e7cfc1b1fbdd35a01a74
 - name: github.com/kelseyhightower/envconfig
-  version: cea086319492c3940683ea5e122aa5de70a33923
+  version: 0b417c4ec4a8a82eecc22a1459a504aa55163d61
 - name: github.com/mitchellh/mapstructure
   version: 482a9fd5fa83e8c4e7817413b80f3eb8feec03ef
 - name: github.com/ncw/swift
